@@ -1,0 +1,11 @@
+org\android\app\R$menu.class
+org\android\app\HelloAndroidActivity.class
+org\android\app\R$string.class
+org\android\app\R$id.class
+org\android\app\R$layout.class
+org\android\app\R.class
+org\android\app\BuildConfig.class
+org\android\app\R$attr.class
+org\android\app\R$style.class
+org\android\app\R$drawable.class
+org\android\app\R$dimen.class
