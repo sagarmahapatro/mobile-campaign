@@ -17,5 +17,5 @@ echo skipping unit test
 %MAVEN_HOME%\bin\mvn.bat eclipse:eclipse
 GOTO EOF
 :EOF
-echo updating eclipse config 
-%MAVEN_HOME%\bin\mvn.bat eclipse:eclipse
+http://veithen.github.io/2009/11/15/ejb-and-web-services.html
+http://www.drdobbs.com/web-development/building-scalable-web-architecture-and-d/240142422?pgno=1
