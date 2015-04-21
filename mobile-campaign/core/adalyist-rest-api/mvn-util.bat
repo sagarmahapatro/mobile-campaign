@@ -11,6 +11,7 @@ echo ======================
 IF "%~1"=="" GOTO pareseError
 IF "%~1"=="-bwu" GOTO builtWithUnitTest
 IF "%~1"=="-bwou" GOTO builtWithOutUnitTest
+IF "%~1"=="-re" GOTO refreshEclipse
 IF "%~1"=="-run"  GOTO run
 :builtWithOutUnitTest
 %mvnbin% clean install -Dmaven.test.skip=true
@@ -19,10 +20,14 @@ GOTO EOF
 %mvnbin% clean install 
 GOTO EOF
 :run
-%mvnbin% spring-boot:run -X 
+echo start running the app
+java -jar target/adalyist-rest-api-0.0.1-SNAPSHOT.jar
 GOTO EOF
 :pareseError
 echo bad input
+GOTO EOF
+:refreshEclipse
+%mvnbin% eclipse:eclipse
 GOTO EOF
 :EOF
 REM ready for action!
